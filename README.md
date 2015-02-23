@@ -1,6 +1,9 @@
 #The Official Website of the Swarm Robotics Research Group, IIT Kharagpur.
 
-##Add a person to the Team section:
+###Change parallax background images.
+* The images can be found at `img/parallax`. Do note that the images cannot be renamed.  
+
+###Add a person to the Team section:
 * Save a 200*200 profile image at `/img/team/`.  
 * Add the following snippet of HTML under `<section id="section-works" class="section appear clearfix">`.
 ```html
@@ -14,4 +17,4 @@
 	</div>
     </article>
 ```
-Replace `<Team>` with software/embedded.
+   Replace `<Team>` with software/embedded.
