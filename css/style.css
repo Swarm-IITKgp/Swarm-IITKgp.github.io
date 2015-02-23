@@ -332,13 +332,13 @@ section.section {
 ============================= */
 
 #parallax1{	
-	background-image: url(../img/parallax/img1.jpg);
+	background-image: url(../img/parallax/1.jpg);
 }
 #parallax2{	
-	background-image: url(../img/parallax/img2.jpg);
+	background-image: url(../img/parallax/2.jpg);
 }
 #testimonials{	
-	background-image: url(../img/parallax/img3.jpg);
+	background-image: url(../img/parallax/3.jpg);
 }
 /*===========================
   --- Header & menu ----
