@@ -14,4 +14,4 @@
 	</div>
     </article>
 ```
-Replace <Team> with software/embedded.
+Replace `<Team>` with software/embedded.
