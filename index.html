@@ -20,44 +20,47 @@
     </head>
 	 
     <body>
-		<section id="header" class="appear"></section>
-		<div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
-			 <div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="fa fa-bars color-white"></span>
-					</button>
-					<h1><a class="navbar-brand" href="index.html" data-0="line-height:90px;" data-300="line-height:50px;">	Swarm IIT Kharagpur
-					</a></h1>
+    	<div style="width: 1366px; height: 551px;"
+    		data-vide-bg="video/ocean" data-vide-options="loop: true, muted: true, position: 0% 0%">
+		
+			<section id="header" class="appear"></section>
+			<div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+				 <div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="fa fa-bars color-white"></span>
+						</button>
+						<h1><a class="navbar-brand" href="index.html" data-0="line-height:90px;" data-300="line-height:50px;">	Swarm IIT Kharagpur
+						</a></h1>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="#section-about">Project Description</a></li>
+							<li><a href="#section-works">Team</a></li>
+							<li><a href="#section-contact">Join Us</a></li>
+						</ul>
+					</div><!--/.navbar-collapse -->
 				</div>
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="#section-about">Project Description</a></li>
-						<li><a href="#section-works">Team</a></li>
-						<li><a href="#section-contact">Join Us</a></li>
-					</ul>
-				</div><!--/.navbar-collapse -->
 			</div>
-		</div>
 
-		<section class="featured">
-			<div class="container"> 
-				<div class="row mar-bot40">
-					<div class="col-md-6 col-md-offset-3">
+			<section class="featured">
+				<div class="container">
+					<div class="row mar-bot40">
+						<div class="col-md-6 col-md-offset-3">
 						
-						<div class="align-center">
-							<i class="fa fa-flask fa-5x mar-bot20"></i>
-							<h2 class="slogan">Welcome to Swarm Research Group.</h2>
-							<p>
-			                Content goes in here.
-							</p>	
+							<div class="align-center">
+								<i class="fa fa-flask fa-5x mar-bot20"></i>
+								<h2 class="slogan">Welcome to Swarm Research Group.</h2>
+								<p>
+				                Content goes in here.
+								</p>	
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		
+			</section>
+		</div>
 		<!-- services -->
 		<section id="section-services" class="section pad-bot30 bg-white">
 		<div class="container"> 
@@ -318,6 +321,10 @@
 	<script src="js/jquery.appear.js"></script>
 	<script src="js/validate.js"></script>
     <script src="js/main.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="js/jquery.vide.min.js"></script>
         <script type="text/javascript">
             // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', init);
