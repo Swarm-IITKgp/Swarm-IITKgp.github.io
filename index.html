@@ -247,7 +247,7 @@
 							<div id="sendmessage">
 								 Your message has been sent. Thank you!
 							</div>
-							<form action="contact/contact.php" method="post" role="form" class="contactForm">
+							<form action="http://formspree.io/adityabhagat95@yahoo.co.in" method="post" role="form" class="contactForm">
 							  <div class="form-group">
 								<label for="name">Your Name</label>
 								<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
@@ -255,7 +255,7 @@
 							  </div>
 							  <div class="form-group">
 								<label for="email">Your Email</label>
-								<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+								<input type="email" class="form-control" name="_replyto" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
 								<div class="validation"></div>
 							  </div>
 							  <div class="form-group">
@@ -268,7 +268,8 @@
 								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
 								<div class="validation"></div>
 							  </div>
-							  
+							  <input type="text" name="_gotcha" style="display:none" />
+							  <input type="hidden" name="_next" value="http://swarm-iitkgp.github.io/" />
 							  <button type="submit" class="btn btn-theme pull-left">SEND MESSAGE</button>
 							</form>
 
