@@ -13,7 +13,7 @@ body {
 	background: #f7f7f7;
 	font-size: 16px;
 	line-height: 1.6em;
-	font-weight: 300;
+	font-weight: 500;
 	text-shadow: none;
 }
 
@@ -437,6 +437,12 @@ section.featured {
 
 section.featured h2.slogan {
 	color: #fff;
+	font-size: 48px;
+	font-weight: 900;
+}
+
+section.featured h2.slogan-new {
+	color: rgba(110, 205, 154, 1);
 	font-size: 48px;
 	font-weight: 900;
 }
