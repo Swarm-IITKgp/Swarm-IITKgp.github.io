@@ -47,9 +47,10 @@ blockquote {
 }
 
 blockquote.bigquote {
+	font-family: inherit;
 	border: none;
 	font-size: 48px;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 1.1em;
 }
 
@@ -745,7 +746,7 @@ nav#filter a {
 .testimonial h5 {
 	color: #fff;
 	font-size: 18px;
-	font-family: Georgia, sans-serif;
+	font-family: Monospace, sans-serif;
 	line-height: 1.5em;
 }	
 
