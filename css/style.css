@@ -17,11 +17,19 @@ body {
 	text-shadow: none;
 }
 
+.body-description {
+	color:#000;
+	font-size: 16px;
+	line-height: 1.6em;
+	font-weight: 500;
+	text-shadow: none;
+}
+
 .clear {
 	clear: both;
 }
 
-body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .body-description {
 	font-family: 'Lato', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -443,7 +451,7 @@ section.featured h2.slogan {
 }
 
 section.featured h2.slogan-new {
-	color: rgba(110, 205, 154, 1);
+	color: rgb(123, 226, 171);
 	font-size: 48px;
 	font-weight: 900;
 }
