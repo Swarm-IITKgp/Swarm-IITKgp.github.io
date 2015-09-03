@@ -350,12 +350,159 @@
 			</div>
 		</section>
 		<section id="parallax2" class="section parallax" data-stellar-background-ratio="0.5">	
-            <div class="align-center pad-top40 pad-bot40">
+<!--             <div class="align-center pad-top40 pad-bot40">
                 <blockquote class="bigquote color-white">Find out more details <a>here</a>!</blockquote>
 				<p class="color-white">Check the above link out to know even more details about the progress of the project.</p>
-            </div>
-		</section>
+            </div> -->
+<!--             			<div class="btn-group-vertical">
+				<button type="button" class="btn btn-default">Terrain Coverage</button>
+  				<button type="button" class="btn btn-default">Mutual Localisation</button>
+  				<button type="button" class="btn btn-default">Multi Agent Path Planning</button>
+			</div> -->
+<!-- 			<ul class="nav nav-pills nav-stacked">
+  <li role="presentation" class="active"><a href="#">Terrain Coverage</a></li>
+  <li role="presentation"><a href="#">Mutual Localisation</a></li>
+  <li role="presentation"><a href="#">Multi Agent Path Planning</a></li>
+</ul> -->
+<div class="container">
+  <h2><b>Project Description:</b></h2>
+  <!-- Software -->
+  <ul class="nav nav-pills">
+  	<li class="active"><a data-toggle="pill" href="#software">Software Team</a></li>
+    <li><a data-toggle="pill" href="#embedded">Embedded Team</a></li>
+  </ul>
+  <div class="tab-content">
+  	<div id="software" class="tab-pane fade in active">
+  	<h3><u>SOFTWARE TEAM</u></h3>
+  	<div class="body-description">
+  	The software team is responsible for designing and implementing the algorithms and distributed intelligence to be used by the swarm robots for performing the task. They are also involved in simulating the algorithms and other operations for testing, verification and visualization purposes.
 
+	Some of the current areas of focus are:
+</div>
+  <br>
+  <ul class="nav nav-pills nav-stacked">
+    <li class="active"><a data-toggle="pill" href="#terrain">Terrain Coverage</a></li>
+    <li><a data-toggle="pill" href="#pose">Pose Estimation</a></li>
+    <li><a data-toggle="pill" href="#mapp">Multi-Agent Path Planning</a></li>
+    <li><a data-toggle="pill" href="#simu">Simulation on ROS and Gazebo</a></li>
+  </ul>
+  <br>
+  <div class="tab-content">
+    <div id="terrain" class="tab-pane fade in active body-description">
+      <h4><b>Terrain Coverage</b></h4>
+      <p>Given the known environment, the swarm agents should spread themselves out across the terrain so as to minimize the average distance of any point on the terrain from its nearest swarm agent. We utilize Lloyd’s algorithm, which is a continuous-time descent method, to achieve this goal, known as Centroidal Voronoi Tessellation. Further analysis needs to be done when there are obstacles in the arena, i.e. when the environment becomes non-convex. Click here for a short video of that method.</p>
+    </div>
+    <div id="pose" class="tab-pane fade body-description">
+      <h4><b>Relative Pose Estimation</b></h4>
+      <p>In order to better localize themselves, considering the absence of any central controller, swarm agents need a reliable estimate of the relative poses of their nearby co-agents. On the software side, we are currently attempting to do this via AprilTags as fiducial markers.</p>
+    </div>
+    <div id="mapp" class="tab-pane fade body-description">
+      <h4><b>Multi Agent Path Planning</b></h4>
+      <p>The manner of movement of a swarm of robots has some important distinctions from that of a single one. Some of the important things to consider are mutually avoiding each other, moving in a constrained manner since individual agents should avoid drifting too far away from each other.</p>
+    </div>
+    <div id="simu" class="tab-pane fade body-description">
+      <h4><b>Simulation on ROS and Gazebo</b></h4>
+      <p> All the tasks are implemented on ROS (Robot Operating System) and visualized through the Gazebo simulator. This is an essential step for being able to check for possible errors in implementation and observe how the system behaves in various environments.</p>
+    </div>
+  </div>
+  	</div>
+	<div id="embedded" class="tab-pane fade in active">
+		<h3><u>EMBEDDED TEAM</u></h3>
+  <div class="body-description">
+  	The work of the embedded team ensures reliable motion, communication and localization by each swarm agent, without which the distributed algorithms cannot properly function in the real world. Some of their focus points are:
+  </div>
+  <br>
+    <ul class="nav nav-pills nav-stacked">
+    <li class="active"><a data-toggle="pill" href="#relpose">Relative Pose Estimation</a></li>
+    <li><a data-toggle="pill" href="#comm">Communication</a></li>
+    <li><a data-toggle="pill" href="#odom">Reliable Locomotion and Odometry</a></li>
+  </ul>
+  <br>
+  <div class="tab-content">
+    <div id="relpose" class="tab-pane fade in active body-description">
+      <h3><u>Relative Pose Estimation</u></h3>
+      <p>Localization in a swarm system, in the absence of a GPS or other global signal, is a difficult task. One way to leverage the multiplicity of the system is to have the agents transmit their relative poses to every other agent, and aggregate these readings to obtain a good estimate of their global pose, assuming they know where they started from. We are exploring a number of methods to achieve this - such as transceiver modules and rotating SHARP encoders. This is parallel to the work being done on this from the software side.</p>
+    </div>
+    <div id="comm" class="tab-pane fade body-description">
+      <h3><u>Communication</u></h3>
+      <p>The swarm agents are an example of distributed message passing systems - the messages they exchange are chunks of data with information about the sender’s ID, timestamp, pose and so on. These messages must be sent in a synchronous manner, and be utilized accordingly by the receivers.</p>
+    </div>
+    <div id="odom" class="tab-pane fade body-description">
+      <h3><u>Reliable Locomotion and Odometry</u></h3>
+      <p>The final motion executed by each swarm robot should be reliable and robust to error and environmental irregularities. Furthermore, the movement of the wheels allows for tracking of the relative motion from the starting point, which can then be corrected by error reduction and using relative poses from other agents. The team uses PID on encoder motors for these purposes.</p>
+    </div>
+  </div>
+  	</div>
+  </div>
+  <!-- <h3><u>SOFTWARE TEAM</u></h3>
+  <div class="body-description">
+  	The software team is responsible for designing and implementing the algorithms and distributed intelligence to be used by the swarm robots for performing the task. They are also involved in simulating the algorithms and other operations for testing, verification and visualization purposes.
+
+Some of the current areas of focus are:
+  </div>
+  <br>
+  <ul class="nav nav-pills nav-stacked">
+    <li class="active"><a data-toggle="pill" href="#terrain">Terrain Coverage</a></li>
+    <li><a data-toggle="pill" href="#pose">Pose Estimation</a></li>
+    <li><a data-toggle="pill" href="#mapp">Multi-Agent Path Planning</a></li>
+    <li><a data-toggle="pill" href="#simu">Simulation on ROS and Gazebo</a></li>
+  </ul>
+  <br>
+  <div class="tab-content">
+    <div id="terrain" class="tab-pane fade in active body-description">
+      <h4><b>Terrain Coverage</b></h4>
+      <p>Given the known environment, the swarm agents should spread themselves out across the terrain so as to minimize the average distance of any point on the terrain from its nearest swarm agent. We utilize Lloyd’s algorithm, which is a continuous-time descent method, to achieve this goal, known as Centroidal Voronoi Tessellation. Further analysis needs to be done when there are obstacles in the arena, i.e. when the environment becomes non-convex. Click here for a short video of that method.</p>
+    </div>
+    <div id="pose" class="tab-pane fade body-description">
+      <h4><b>Relative Pose Estimation</b></h4>
+      <p>In order to better localize themselves, considering the absence of any central controller, swarm agents need a reliable estimate of the relative poses of their nearby co-agents. On the software side, we are currently attempting to do this via AprilTags as fiducial markers.</p>
+    </div>
+    <div id="mapp" class="tab-pane fade body-description">
+      <h4><b>Multi Agent Path Planning</b></h4>
+      <p>The manner of movement of a swarm of robots has some important distinctions from that of a single one. Some of the important things to consider are mutually avoiding each other, moving in a constrained manner since individual agents should avoid drifting too far away from each other.</p>
+    </div>
+    <div id="simu" class="tab-pane fade body-description">
+      <h4><b>Simulation on ROS and Gazebo</b></h4>
+      <p> All the tasks are implemented on ROS (Robot Operating System) and visualized through the Gazebo simulator. This is an essential step for being able to check for possible errors in implementation and observe how the system behaves in various environments.</p>
+    </div>
+  </div> -->
+  <!-- Embedded -->
+    <!-- <h3><u>EMBEDDED TEAM</u></h3>
+  <div class="body-description">
+  	The software team is responsible for designing and implementing the algorithms and distributed intelligence to be used by the swarm robots for performing the task. They are also involved in simulating the algorithms and other operations for testing, verification and visualization purposes.
+
+Some of the current areas of focus are:
+  </div>
+  <br>
+    <ul class="nav nav-pills nav-stacked">
+    <li class="active"><a data-toggle="pill" href="#relpose">Relative Pose Estimation</a></li>
+    <li><a data-toggle="pill" href="#comm">Communication</a></li>
+    <li><a data-toggle="pill" href="#odom">Reliable Locomotion and Odometry</a></li>
+  </ul>
+  <br>
+  <div class="tab-content">
+    <div id="relpose" class="tab-pane fade in active body-description">
+      <h3><u>Relative Pose Estimation</u></h3>
+      <p>Localization in a swarm system, in the absence of a GPS or other global signal, is a difficult task. One way to leverage the multiplicity of the system is to have the agents transmit their relative poses to every other agent, and aggregate these readings to obtain a good estimate of their global pose, assuming they know where they started from. We are exploring a number of methods to achieve this - such as transceiver modules and rotating SHARP encoders. This is parallel to the work being done on this from the software side.</p>
+    </div>
+    <div id="comm" class="tab-pane fade body-description">
+      <h3><u>Communication</u></h3>
+      <p>The swarm agents are an example of distributed message passing systems - the messages they exchange are chunks of data with information about the sender’s ID, timestamp, pose and so on. These messages must be sent in a synchronous manner, and be utilized accordingly by the receivers.</p>
+    </div>
+    <div id="odom" class="tab-pane fade body-description">
+      <h3><u>Reliable Locomotion and Odometry</u></h3>
+      <p>The final motion executed by each swarm robot should be reliable and robust to error and environmental irregularities. Furthermore, the movement of the wheels allows for tracking of the relative motion from the starting point, which can then be corrected by error reduction and using relative poses from other agents. The team uses PID on encoder motors for these purposes.</p>
+    </div>
+  </div> -->
+<!-- </div> -->
+
+		</section>
+<!-- 		<section id="section-description">
+			<div class="btn-group-vertical">
+				<button type="button" class="btn btn-default">1</button>
+  				<button type="button" class="btn btn-default">2</button>
+			</div>
+		</section> -->
 		<!-- contact -->
 		<section id="section-contact" class="section appear clearfix">
 			<div class="container">
