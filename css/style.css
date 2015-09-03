@@ -5,7 +5,7 @@
 /* ==== overwrite bootstrap standard ==== */
 @import url('overwrite.css');
 @import url('animate.css');
-/*==========================================================================
+/*=====================f=====================================================
   General
   ========================================================================== */
 body {
@@ -343,7 +343,7 @@ section.section {
 #parallax1{	
 	background-image: url(../img/parallax/1.jpg);
 }
-#parallax2{	
+#section-description{	
 	background-image: url(../img/parallax/2.jpg);
 }
 #testimonials{	
