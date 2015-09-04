@@ -9,6 +9,10 @@ a:hover {
 	color: #79CDC0;
 }
 
+a.tweak {
+	color: #306DDC;
+}
+
 /* menu */
 .nav>li>a:hover {
 	color: #79CDC0;
