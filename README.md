@@ -7,12 +7,12 @@
 * Save a 200*200 profile image at `/img/team/`.  
 * Add the following snippet of HTML under `<section id="section-works" class="section appear clearfix">`.
 ```html
-    <article class="col-md-2 isotopeItem <Team>">
+    <article class="col-md-2 isotopeItem software">
 	<div class="team-member" align="center">
-		<figure class="member-photo"><img src="img/team/<File name>.jpg" alt="" /></figure>
+		<figure class="member-photo"><img src="img/team/Srishti.jpg" alt="" /></figure>
 		<div class="team-detail">
-			<h4><Name of the member></h4>
-			<span><Job Profile></span>					
+			<h4>Srishti Samadder</h4>
+			<span>Member,Software Team</span>					
 		</div>
 	</div>
     </article>
