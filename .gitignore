@@ -5,3 +5,6 @@
 _site/
 .sass-cache/
 
+
+#####=== Others ===#####
+*.swp
